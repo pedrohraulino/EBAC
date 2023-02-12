@@ -14,7 +14,7 @@ function validaNumero(um,dois){
             e.preventDefault();
             formValido = validaNumero(numeroUm.value,numeroDois.value)
             const mensagemSucesso = `Formulário enviado com sucesso`
-            const mensagemError = `Por favor digite um numero mais alto que ${numeroUm.value} no segundo numero`
+            const mensagemError = `Por favor digite um numero maior que ${numeroUm.value} no segundo numero`
 
         if(formValido){        
             mensagemDeSucesso.innerHTML=mensagemSucesso
