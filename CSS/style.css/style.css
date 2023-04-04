@@ -1,0 +1,309 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
+}
+header{
+    background-color: #00A991;
+    color: aliceblue;
+    font-size: 24px;
+    position: sticky;
+    top: 0
+    ;
+
+}
+
+header img{
+    height: 32px;
+    margin-top: 6px;
+    width: auto;
+    position: sticky;
+}
+
+header > .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+
+}
+
+header h1{
+    font-size: 24px;
+    text-align: center;
+}
+
+.carrinho span{
+    height: 2px;
+    width: 100%;
+    background: aliceblue;
+    display: block;
+    margin-bottom: 4px;
+    border-radius: 1px;
+}
+.carrinho{
+    width: 32px;
+    cursor: pointer;
+}
+
+.carrinho-pagamento{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+
+}
+#carrinhoDeCompras{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 47%;
+    background-color: #E6F6F4;
+    padding: 32px;
+    border-radius: 16px;
+}
+
+#carrinhoDeCompras >    h2{
+    font-size: 23px !important;
+}
+
+#carrinhoDeCompras .botao-carrinho
+{
+    width: auto;
+    font-size: 10px;
+}
+
+#botaoVoltar .botao-carrinho{
+    width: auto;
+}
+
+#carrinhoDeCompras .botao-carrinho-verde,
+#botaoConcluir .botao-carrinho-verde, #voltarInicio{
+    width: auto;
+    background-color: #00A991;
+    color: #fff;
+    border-radius: 4px;
+    margin-left: 16px;
+}
+.rodape-carrinho{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 16px 0;
+}
+
+.container-nav{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+nav li{
+    display: flex;
+    padding: 8px;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+nav ul{
+    position: fixed;
+    margin-top: 24px;
+    margin-right: 8px;
+    width: auto;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #E6F6F4;
+}
+
+nav img{
+    height: 72.85px;
+    width: auto;
+}
+
+nav p{
+    font-size: 12px
+}
+
+nav strong{
+    font-size: 16px;
+}
+.item{
+    margin-left: 16px;
+    width: auto;
+}
+
+nav div{
+    width: 100%;
+}
+
+nav h3{
+    text-align: left;
+    display: block;
+}
+
+.botao-carrinho{
+    background-color: transparent;
+    color:#003B33;
+    outline:none;
+    padding: 8px;
+    text-align: right;
+    border: none;
+    cursor: pointer;
+    width: 100%;    
+}
+
+.rodape-nav{
+    display: flex;
+    align-items: flex-end;
+}
+
+#pagamento h2{
+    color: #1E1E1E;
+    font-size: 30px;
+}
+
+#pagamento p{
+    color: #1E1E1E;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 8px;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#dadosPessoais,
+#dadosEntrega{
+    width: 47%;
+    padding-top: 32px;
+}
+
+#botaoConcluir{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end
+}
+
+#botaoVoltar{
+    width: 50%;
+}
+
+#dadosPagamento{
+    width: 47%;
+    padding-top: 32px;
+}
+
+#dadosPessoais h2,
+#dadosPagamento h2,
+#dadosEntrega h2 {
+    font-size: 23px;
+    margin-bottom: 16px;
+}
+
+#dadosPessoais input,
+#dadosPagamento input,
+#dadosEntrega input{
+    display: block;
+    width: 100%;
+    height: 34px;
+    background-color:#E6F6F4;
+    border: none;
+    border-radius: 4px;
+    margin: 8px 0px 8px 0;
+    font-size: 16px;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+
+.doisCampos{
+    display: flex;
+    justify-content: space-between;
+}
+.doisCampos input{
+    width: 230px !important;
+
+}
+
+div{
+    margin-bottom: 12px ;
+}
+
+select {
+    display: block;
+    padding: 8px;
+    font-size: 16px;
+    margin: 8px 0px 8px 0;
+    border: none;
+    border-radius: 4px;
+    background-color: #E6F6F4;
+    border: 1px solid #ccc;
+    width: 230px;
+    height: 34px;
+}
+
+section{
+    max-height: 1000px;
+}
+
+footer{
+    background-color: #00A991;
+    width: 100%;
+}
+
+footer h4{
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+}
+
+
+#numeroCasa, #CVV, #validade{
+    width: 100px !important;
+}
+
+.campoMenor{
+    display: block;
+    width: 230px;
+}
+
+.error{
+    color: red;
+    font-size: 12px;
+}
+
+.mensagemFinal{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 900px;
+}
+
+.mensagemFinal h2{
+    text-align: center;
+}
