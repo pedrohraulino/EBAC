@@ -1,334 +1,79 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iDrop Store
-    </title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel=" stylesheet " href="main.css ">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="build/main.css">
 </head>
-
 <body>
-    <header id="cabecalho" class="navbar navbar-expand-lg sticky-top p-3">
+    <header>
         <div class="container">
-            <div class="d-flex align-items-center">
-                <i class="navbar-brand bi bi-apple"></i>
-                <h1 class="navbar-brand m-0 p-0">iDrop</h1>
+            <div class="branding">
+                <img src="https://via.placeholder.com/120x70" />
             </div>
-            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menuNav">
-                <span class="navbar-toggler-icon">
-                </span>
-            </button>       
-            <nav id="menuNav" class="navbar-collapse collapse justify-content-end">
-                <ul class="nav nav-pills d-block d-lg-flex">
-                    <li class="nav-item fw-bold">
-                        <a class="nav-link" href="#sobre">
-                            <i class="bi bi-shop-window me-2"></i>
-                            Sobre
-                        </a>
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <a href="#">Início</a>
                     </li>
-                    <li class="nav-item fw-bold">
-                        <a class="nav-link" href="#diferenciais">
-                            <i class="bi bi-bookmark-star me-2"></i>
-                            Diferenciais
-                        </a>
-                    </li>
-                    <li class="nav-item fw-bold">
-                        <a class="nav-link" href="#produtos">
-                            <i class="bi bi-phone me-2"></i>
-                            Produtos
-                        </a>
-                    </li>
-                    <li class="nav-item fw-bold">
-                        <a class="nav-link" href="#contato">
-                            <i class="bi bi-person-lines-fill me-2"></i>
-                            Contato
-                        </a>
+                    <li>
+                        <a href="#">Produtos</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
-    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
-        <section class="bg-dark text-bg-dark">
-            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="2000">
-                        <div class="containerIMG">
-                            <img src="./img/macbook-iDrop.png" alt="">
-                        </div>
-                    </div>
-                    <div class="carousel-item" data-bs-interval="2000">
-                        <div class="containerIMG">
-                            <img src="./img/iphone-iDrop.jpg" alt="">
-                        </div>      
-                    </div>
-                    <div class="carousel-item" data-bs-interval="2000">
-                        <div class="containerIMG">
-                            <img src="./img/ipad-iDrop.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-                    <span class="carousel-control-next-icon"></span>
-                </button>
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
-                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
-                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
-                </div>
-            </div>
-            <div id="sobre" class="pt-5 pb-5">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-5">
-                            <img class="d-block w-100 rounded-3" src="./img/idrop.jpg" alt="">
-                        </div>
-                        <div class="col-md-7 d-flex flex-column justify-content-evenly">
-                            <div class="container p-0 mt-3 mt-md-0">
-                                <h2>Sobre a iDrop</h2>
-                                <p>A iDrop é uma loja de importados especializada em produtos da Apple, oferecendo aos consumidores uma ampla variedade de dispositivos e acessórios de alta qualidade. Fundada com a missão de proporcionar acesso fácil e conveniente aos renomados produtos da Apple, a iDrop se destaca por oferecer uma experiência de compra diferenciada.</p>
-                            </div>
-                            <div class="container p-0">
-                                <h3>Sobre os nossos produtos</h3>
-                                <p>Na iDrop, oferecemos uma ampla seleção de produtos da Apple que capturam a essência da inovação e qualidade. Nossos produtos são verdadeiras obras-primas da tecnologia móvel, combinando design elegante e desempenho avançado para transformar a maneira como você se conecta com o mundo.</p>  
-                            </div>                   
-                            <div class="container p-0">
-                                <nav class="nav nav-tabs justify-content-around">
-                                    <button data-bs-toggle="tab" data-bs-target="#aba1" class="nav-link text-bg-dark active" type="submit">Macbook</button>
-                                    <button data-bs-toggle="tab" data-bs-target="#aba2" class="nav-link text-bg-dark" type="submit">iPad</button>
-                                    <button data-bs-toggle="tab" data-bs-target="#aba3" class="nav-link text-bg-dark" type="submit">iPhone</button>
-                                </nav>
-                                <div class="tab-content mt-2">
-                                    <div class="tab-pane active" id="aba1">
-                                        Esses laptops da Apple combinam elegância, desempenho e recursos exclusivos, atendendo tanto a profissionais criativos quanto a usuários exigentes. De designs leves a configurações poderosas, nossos MacBooks oferecem o melhor em termos de tecnologia e estilo. 
-                                    </div>
-                                    <div class="tab-pane" id="aba2">
-                                        De iPads padrão a iPads Pro, oferecemos uma variedade de modelos que se adaptam às suas necessidades, seja para produtividade, criatividade ou entretenimento.
-                                    </div>
-                                    <div class="tab-pane" id="aba3">
-                                        Desde os mais recentes lançamentos até os modelos clássicos, cada iPhone é uma obra-prima de design e desempenho. Com uma câmera excepcional, poder de processamento avançado e integração perfeita com o ecossistema da Apple, os iPhones oferecem uma experiência incomparável
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="diferenciais">
-            <div class="container">
-                <div class="row">
-                    <h2 class="pt-5 pb-5 text-center fw-bolder">Nosso Diferenciais</h2>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <img class="w-25" src="./img/entregamaos.png" alt="">
-                        <h3 class="pt-4 fw-bold">Entrega em Mãos</h3>
-                        <p>Na iDrop, estamos comprometidos em proporcionar a melhor experiência de compra possível para nossos clientes. Por isso, oferecemos a opção de entrega em mãos, para que você possa receber seus produtos da Apple de forma rápida, segura e conveniente. </p>
-                    </div>
-                    <div class="col-md-4">
-                        <img class="w-25" src="./img/atendimento.png" alt="">
-                        <h3 class="pt-4 fw-bold">Atendimento Diferenciado</h3>
-                        <p>Na iDrop, não apenas fornecemos produtos da Apple, mas também nos empenhamos em criar uma experiência única para nossos clientes. Nosso atendimento diferenciado nos define como uma loja de importados da Apple excepcional.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <img class="w-25" src="./img/credit-card.png" alt="">
-                        <h3 class="pt-4 fw-bold">Parcelamento em até 18x</h3>
-                        <p>Na iDrop, nossa prioridade é tornar a tecnologia da Apple acessível a todos os clientes. É por isso que oferecemos a opção de parcelamento em até 18 vezes, para que você possa desfrutar dos produtos incríveis da Apple sem comprometer seu orçamento.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="produtos">
-            <div class="container">
-                <div class="row pt-5 pb-5">
-                    <h2 class="text-center fw-bolder">Nosso Produtos</h2>
-                    <p class="text-md-center">Selecione o produto no menu ao lado esquerdo para visualzar os valores</p>
-                </div>
-                <div class="row">
-                    <aside class="row">
-                        <nav class="nav nav-tabs justify-content-evenly">
-                            <button data-bs-toggle="tab" data-bs-target="#tabiPhones" class="nav-link active rounded-2">
-                                <img class="d-block containerIMG rounded-2" src="./img/14 pro max.png" alt="">
-                                <h3 class="pt-4 text-dark">iPhones</h3>
-                            </button>
-                            <button data-bs-toggle="tab" data-bs-target="#tab-mac" class="nav-link rounded-2">
-                                <img class="d-block containerIMG rounded-2" src="./img/14 pro max.png" alt="">
-                                <h3 class="pt-4 text-dark">Macbook</h3>
-                            </button>
-                            <button data-bs-toggle="tab" data-bs-target="#tab-ipad" class="nav-link rounded-2">
-                                <img class="d-block containerIMG rounded-2" src="./img/14 pro max.png" alt="">
-                                <h3 class="pt-4 text-dark">iPad</h3>
-                            </button>
-                        </nav>                        
-                    </aside>
-                    <div class="col-md-12">
-                        <div class="tab-content">
-                            <div class="tab-pane active" id="tabiPhones">
-                                <div class="row">
-                                    <div class="col-md-3 col-sm-6 pt-5">
-                                        <img class=" containerIMG rounded-2" src="./img/14.png" alt="">
-                                        <h3 class="pt-4 text-dark">iPhone 14</h3>
-                                        <h5>128gb | Lacrado</h5>
-                                        <h2 class="mb-0">R$ 4.699,99</h2>
-                                        <h6>em até 18x</h6>
-                                        <button type="submit" class="btn btn-dark">Comprar</button>
-                                    </div>
-                                    <div class="col-md-3 col-sm-6 pt-5">
-                                        <img class=" containerIMG rounded-2" src="./img/14 pro.png" alt="">
-                                        <h3 class="pt-4 text-dark">iPhone 14 Pro</h3>
-                                        <h5>128gb | Lacrado</h5>
-                                        <h2 class="mb-0">R$ 5.999,99</h2>
-                                        <h6>em até 18x</h6>
-                                        <button type="submit" class="btn btn-dark">Comprar</button>
-                                    </div>
-                                    <div class="col-md-3 col-sm-6 pt-5">
-                                        <img class=" containerIMG rounded-2" src="./img/14 pro max.png" alt="">
-                                        <h3 class="pt-4 text-dark">iPhone 14 Pro Max</h3>
-                                        <h5>128gb | Lacrado</h5>
-                                        <h2 class="mb-0">R$ 6.359,99</h2>
-                                        <h6>em até 18x</h6>
-                                        <button type="submit" class="btn btn-dark">Comprar</button>
-                                    </div>
-                                    <div class="col-md-3 col-sm-6 pt-5">
-                                        <img class=" containerIMG rounded-2" src="./img/13.png" alt="">
-                                        <h3 class="pt-4 text-dark">iPhone 13</h3>
-                                        <h5>128gb | Lacrado</h5>
-                                        <h2 class="mb-0">R$ 3.999,99</h2>
-                                        <h6>em até 18x</h6>
-                                        <button type="submit" class="btn btn-dark">Comprar</button>
-                                    </div>
-                                    <div class="col-md-3 col-sm-6 pt-5">
-                                        <img class=" containerIMG rounded-2" src="./img/13 pro max.png" alt="">
-                                        <h3 class="pt-4 text-dark">iPhone 13 Pro Max</h3>
-                                        <h5>128gb | Lacrado</h5>
-                                        <h2 class="mb-0">R$ 4.999,99</h2>
-                                        <h6>em até 18x</h6>
-                                        <button type="submit" class="btn btn-dark">Comprar</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane" id="tab-mac">
-                                <div class="row">
-                                    <div class="col-md-3 col-sm-6 pt-5">
-                                        <img class=" containerIMG rounded-2" src="./img/m1.png" alt="">
-                                        <h3 class="pt-4 text-dark">Macbook Air M1</h3>
-                                        <h5>256gb | 8gb | Lacrado</h5>
-                                        <h2 class="mb-0">R$ 5.399,99</h2>
-                                        <h6>em até 18x</h6>
-                                        <button type="submit" class="btn btn-dark">Comprar</button>
-                                    </div>
-                                    <div class="col-md-3 col-sm-6 pt-5">
-                                        <img class=" containerIMG rounded-2" src="./img/m1 - 512.png" alt="">
-                                        <h3 class="pt-4 text-dark">Macbook Air M1</h3>
-                                        <h5>512gb | 16gb | Lacrado</h5>
-                                        <h2 class="mb-0">R$ 7.399,99</h2>
-                                        <h6>em até 18x</h6>
-                                        <button type="submit" class="btn btn-dark">Comprar</button>
-                                    </div>
-                                    <div class="col-md-3 col-sm-6 pt-5">
-                                        <img class=" containerIMG rounded-2" src="./img/m1 - 512.png" alt="">
-                                        <h3 class="pt-4 text-dark">Macbook Air M2</h3>
-                                        <h5>256gb | 8gb | Lacrado</h5>
-                                        <h2 class="mb-0">R$ 6.899,99</h2>
-                                        <h6>em até 18x</h6>
-                                        <button type="submit" class="btn btn-dark">Comprar</button>
-                                    </div>
-                                    <div class="col-md-3 col-sm-6 pt-5">
-                                        <img class=" containerIMG rounded-2" src="./img/m1.png" alt="">
-                                        <h3 class="pt-4 text-dark">Macbook Air M2</h3>
-                                        <h5>512gb | 16gb | Lacrado</h5>
-                                        <h2 class="mb-0">R$ 9.199,99</h2>
-                                        <h6>em até 18x</h6>
-                                        <button type="submit" class="btn btn-dark">Comprar</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane" id="tab-ipad">
-                                <div class="row">
-                                    <div class="col-md-3 col-sm-6 pt-5">
-                                        <img class=" containerIMG rounded-2" src="./img/ipad5.png" alt="">
-                                        <h3 class="pt-4 text-dark">iPad Air 5</h3>
-                                        <h5>64gb | 8gb | Lacrado</h5>
-                                        <h2 class="mb-0">R$ 3.399,99</h2>
-                                        <h6>em até 18x</h6>
-                                        <button type="submit" class="btn btn-dark">Comprar</button>
-                                    </div>
-                                    <div class="col-md-3 col-sm-6 pt-5">
-                                        <img class=" containerIMG rounded-2" src="./img/ipad10.png" alt="">
-                                        <h3 class="pt-4 text-dark">iPad 10</h3>
-                                        <h5>64gb | Lacrado</h5>
-                                        <h2 class="mb-0">R$ 2.999,99</h2>
-                                        <h6>em até 18x</h6>
-                                        <button type="submit" class="btn btn-dark">Comprar</button>
-                                    </div>
-                                    <div class="col-md-3 col-sm-6 pt-5">
-                                        <img class=" containerIMG rounded-2" src="./img/ipadmini.png" alt="">
-                                        <h3 class="pt-4 text-dark">iPad mini</h3>
-                                        <h5>64gb | Lacrado</h5>
-                                        <h2 class="mb-0">R$ 3.199,99</h2>
-                                        <h6>em até 18x</h6>
-                                        <button type="submit" class="btn btn-dark">Comprar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="contato" class="bg-dark mt-5">
-            <div class="container">
-                <div class="row">
-                    <h2 class="text-white text-center pt-5 fw-bolder">Quer vender seu aparalho usado para a iDrop?</h2>
-                    <h6 class="text-white text-center pt-2">Preencha o formlário abaixo com os dados solicitado que faremos uma analise do seu aparelho!</h6>
-                    <div class="col-md-6 pt-5">
-                        <form >
-                            <div>
-                                <label for="nome" class="form-label text-white">Nome</label>
-                                <input type="text" id="nome" class="form-control" required>
-                            </div>
-                            <div>
-                                <label for="telefone" class="form-label text-white pt-4">WhatsApp</label>
-                                <input type="tel" id="telefone" class="form-control" required>
-                            </div>
-                            <div>
-                                <label for="aparelho" class="form-label text-white pt-4">Aparelho</label>
-                                <input type="text" id="aparelho" class="form-control" required>
-                            </div>
-                            <div>
-                                <label for="imagem" class="form-label text-white pt-4">Anexe 3 fotos do aparelho</label>
-                                <input type="file" id="imagem" class="form-control" required>
-                            </div>
-                            <button type="submit" class="btn btn-light mt-4 mb-5 w-100">Enviar</button>
-                        </form>
-                    </div>
-                    <div class="col-md-6 p-5 text-white">
-                        <div class="row">
-                            <h4>Contato:</h4>
-                            <h6>(00) 00000-0000 ou @idrop no instagram</h6>
-                        </div>
-                        <div class="row">
-                            <h4>Endereço:</h4>
-                            <h6>Avenida Ayrton Senna, nº1244, Petropolis - Natal/RN</h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js "></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="./jquery.mask.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('#telefone').mask('(00) 00000-0000')
-        })
-    </script>
+    <section>
+        <div class="container">
+            <h2>Produtos</h2>
+            <ul class="products">
+                <li class="product-item">
+                    <img src="https://via.placeholder.com/180x180" />
+                    <h4>Nome do produto</h4>
+                    <p>
+                        Descrição do produto, cor, tamanho, textura, etc.
+                    </p>
+                    <a href="#" class="product-button">
+                        Ver detalhes
+                    </a>
+                </li>
+                <li class="product-item">
+                    <img src="https://via.placeholder.com/180x180" />
+                    <h4>Nome do produto</h4>
+                    <p>
+                        Descrição do produto, cor, tamanho, textura, etc.
+                    </p>
+                    <a href="#" class="product-button">
+                        Ver detalhes
+                    </a>
+                </li>
+                <li class="product-item">
+                    <img src="https://via.placeholder.com/180x180" />
+                    <h4>Nome do produto</h4>
+                    <p>
+                        Descrição do produto, cor, tamanho, textura, etc.
+                    </p>
+                    <a href="#" class="product-button">
+                        Ver detalhes
+                    </a>
+                </li>
+                <li class="product-item">
+                    <img src="https://via.placeholder.com/180x180" />
+                    <h4>Nome do produto</h4>
+                    <p>
+                        Descrição do produto, cor, tamanho, textura, etc.
+                    </p>
+                    <a href="#" class="product-button">
+                        Ver detalhes
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
 </body>
+</html>
