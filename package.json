@@ -4,12 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass source/main.scss build/main.css --watch",
+    "gulp": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "sass": "^1.66.1"
+    "gulp": "^4.0.2"
   }
 }
