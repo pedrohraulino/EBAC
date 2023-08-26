@@ -29,7 +29,7 @@ function compilaSass() {
 }
 
 exports.default =  function(){
+    gulp.watch('./source/imagens/*', { ignoreInitial: false }, gulp.series(compimeImagens));
     gulp.watch('./source/styles/*.scss', { ignoreInitial: false }, gulp.series(compilaSass));
     gulp.watch('./source/scripts/*.js', { ignoreInitial: false }, gulp.series(comprimeJavaScript));
-    gulp.watch('./source/imagens/*', { ignoreInitial: false }, gulp.series(compimeImagens));
 }
