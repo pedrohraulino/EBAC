@@ -255,7 +255,7 @@ document.addEventListener('DOMContentLoaded', function () {
             celulaSalario.textContent = `R$ ${valorSalario}`;
         }
     }
-    const totalSalario = calculateTotalSalaries(); // Calcula a soma total dos salários
+    const totalSalario = calculaTotalSalario(); // Calcula a soma total dos salários
     folhaSalarial.querySelector('h2').textContent = `${totalSalario}`;
     }
          
@@ -275,7 +275,7 @@ document.addEventListener('DOMContentLoaded', function () {
         return value.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
     }
 
-    function calculateTotalSalaries() {
+    function calculaTotalSalario() {
         let totalSalario = 0;
     
         // Itera através das linhas da tabela para somar os salários
@@ -296,5 +296,13 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         return buf;
     }
+    
+    $(document).ready(function () {
+        $('#salario').maskMoney({
+            thousands: '.',
+            decimal: ',',
+            affixesStay: false
+        });
+    });
     
 });
