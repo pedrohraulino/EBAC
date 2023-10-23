@@ -42,12 +42,25 @@ input{
     border: none;
     background-color: transparent;
     display: block;
-    color: #fff;
+    color: @corPrincipal;
     border-bottom: 4px solid @corPrincipal;
     text-align: center;
 
     &:focus{
         outline: none;
         caret-color: @corPrincipal;
+    }
+}
+
+.resultado{
+    padding-top: 32px;
+    color: rgb(80, 80, 80);
+    font-size: 1.4em;
+    display: none;
+
+    #resultadoSorteio{
+        margin: 0px;
+        font-size: 4em;
+        color:@corPrincipal ;
     }
 }

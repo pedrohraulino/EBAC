@@ -33,11 +33,22 @@ input {
   border: none;
   background-color: transparent;
   display: block;
-  color: #fff;
+  color: #eb3b5a;
   border-bottom: 4px solid #eb3b5a;
   text-align: center;
 }
 input:focus {
   outline: none;
   caret-color: #eb3b5a;
+}
+.resultado {
+  padding-top: 32px;
+  color: #505050;
+  font-size: 1.4em;
+  display: none;
+}
+.resultado #resultadoSorteio {
+  margin: 0px;
+  font-size: 4em;
+  color: #eb3b5a;
 }
