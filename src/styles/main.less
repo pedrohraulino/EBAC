@@ -1,26 +1,13 @@
 @fontPrincipal: Roboto, sans-serif;
 @fontTitle: Lobster, cursive;
-@corPrincipal: #eb3b5a;
-@corDeFundo: antiquewhite;
+@corPrincipal: black;
+@corDeFundo: white;
 
 body{
     background-color: @corDeFundo;
     font-family: @fontPrincipal;
 }
 
-h1{
-    text-align: center;
-    font-family: @fontTitle;
-    color: @corPrincipal;
-    font-size: 3em;
-}
-
-main{
-    max-width: 960px;
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-}
 
 button{
     font-family: @fontPrincipal;
@@ -35,22 +22,6 @@ button{
     border-color: transparent;
 }
 
-input{
-    margin: 16px auto 0;
-    font-size: 2em;
-    max-width: 120px;
-    border: none;
-    background-color: transparent;
-    display: block;
-    color: @corPrincipal;
-    border-bottom: 4px solid @corPrincipal;
-    text-align: center;
-
-    &:focus{
-        outline: none;
-        caret-color: @corPrincipal;
-    }
-}
 
 .resultado{
     padding-top: 32px;
@@ -63,4 +34,13 @@ input{
         font-size: 4em;
         color:@corPrincipal ;
     }
+}
+h1{
+    text-align: center;
+}
+main{
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
 }

@@ -23,6 +23,10 @@ module.exports = function (grunt) {
                 files: ['src/styles/**/*.less'],
                 tasks: ['less:development']
             },
+            js: {
+                files: ['src/scripts/**/*.js'],
+                tasks: ['uglify'] 
+            },
             html: {
                 files: ['src/index.html'],
                 tasks: ['replace:dev']
@@ -33,11 +37,11 @@ module.exports = function (grunt) {
                 options: {
                     patterns: [
                         {
-                            match: 'EDERECO_DO_CSS',
+                            match: 'ENDERECO_DO_CSS',
                             replacement: './styles/main.css'
                         },
                         {
-                            match: 'EDERECO_DO_JS',
+                            match: 'ENDERECO_DO_JS',
                             replacement: '../src/scripts/main.js'
                         }
                     ]
@@ -53,11 +57,11 @@ module.exports = function (grunt) {
                 options: {
                     patterns: [
                         {
-                            match: 'EDERECO_DO_CSS',
+                            match: 'ENDERECO_DO_CSS',
                             replacement: './styles/main.min.css'
                         },
                         {
-                            match: 'EDERECO_DO_JS',
+                            match: 'ENDERECO_DO_JS',
                             replacement: './scripts/main.min.js'
                         }
                     ]

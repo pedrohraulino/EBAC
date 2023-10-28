@@ -1,18 +1,12 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-    document.getElementById('sorteador').addEventListener("submit", function (e) {
-        let numeroMaximo = document.getElementById("numeroMaximo").value;
-        numeroMaximo = parseInt(numeroMaximo);
+    document.getElementById('alterarTema').addEventListener("submit", function (e) {
         e.preventDefault();
-        let numeroAleatorio = Math.random() * numeroMaximo;
-        numeroAleatorio = Math.round(numeroAleatorio);
-
-        if (numeroAleatorio == 0) {
-            document.getElementById('resultadoSorteio').innerText = numeroAleatorio + 1
-        } else {
-            document.getElementById('resultadoSorteio').innerText = numeroAleatorio
-        }
-
-        document.querySelector('.resultado').style.display = "block"
+        document.querySelector('.tema').style.display = "block"
+        document.querySelector('body').style.backgroundColor = "black"
+        document.querySelector('button').style.backgroundColor = "#fff"
+        document.querySelector('button').style.color = "black"
+        document.querySelector('h1').style.color = "#fff"
+        document.querySelector('h2').style.color = "#fff"
     })
 })
