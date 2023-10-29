@@ -1,6 +1,69 @@
-$bgcolor: red;
+@use 'variaveis';
+@use 'hero';
 
-body{
-    background-color: $bgcolor;
-    color: wheat;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin text($fontSize: 16px) {
+    color: variaveis.$corMarrom;
+    font-size: $fontSize ;
+}
+
+@font-face {
+    font-family: NotoSans;
+    src: url(../../assets/fonts/NotoSans-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: NotoSans;
+    src: url(../../assets/fonts/NotoSans-Medium.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: NotoSerifTC;
+    src: url(../../assets/fonts/NotoSerifTC-Black.otf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: NotoSerifTC;
+    src: url(../../assets/fonts/NotoSerifTC-Medium.otf);
+    font-weight: 400;
+}
+
+
+.text--small {
+    @include text;
+}
+
+.text--medium {
+    @include text(20);
+}
+
+.text--big {
+    @include text(24);
+}
+
+.text--title {
+    @include text(40);
+}
+
+.text--title--blue {
+    font-size: 56px;
+    color: variaveis.$corPrimaria
+}
+
+.text--small-small {
+    @include text(12);
+    font-weight: 300;
+}
+
+body {
+    font-family: NotoSans, sans-serif;
+    background-color: variaveis.$corDeFundo;
 }
